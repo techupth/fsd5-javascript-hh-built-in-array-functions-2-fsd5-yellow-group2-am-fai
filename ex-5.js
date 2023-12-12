@@ -2,6 +2,13 @@ let crimeRecordNames = ["Theodora Milenko", "Tinashe Benigno", "Mahalia Priyanka
 
 function searchCrimeRecord(name) {
   // Start coding here
+  let sreachCrimeName = crimeRecordNames.includes(name)
+
+  if (sreachCrimeName === true){
+    return `${name} has crime record !!!`
+  }else {
+    return `${name} has no crime record`
+  }
 }
 
 //ผลลัพธ์ที่ควรได้จาก Example case

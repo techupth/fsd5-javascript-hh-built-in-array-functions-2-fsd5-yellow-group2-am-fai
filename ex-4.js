@@ -374,4 +374,36 @@ const bills = [
 ];
 
 // Start coding here
-const totalMembers;
+let totalMembers = [];
+
+let newBills = null;
+
+function noMemberNull (bill){
+  return bill = bill.member !== null 
+}
+
+newBills = bills.filter(noMemberNull)
+//console.log(newBills)
+
+let billMembers;
+
+function billName (bill){
+  return bill = bill.member.name
+}
+
+billMembers = newBills.map(billName);
+//console.log(billMembers)
+
+
+for(let i=0; i< billMembers.length; i++){
+  if(!totalMembers.includes(billMembers[i])){
+    totalMembers.push(billMembers[i])
+  }
+} 
+
+
+console.log(totalMembers)
+
+ 
+
+
