@@ -380,5 +380,4 @@ function calculateTotal(totalBill,bill){
 }
 
 let totalAmount = bills.reduce(calculateTotal,0);
-let result = `Total bill transaction is ${totalAmount.toLocaleString()}`
-console.log(result)
+console.log(`Total bill transaction is ${totalAmount.toLocaleString()}`)

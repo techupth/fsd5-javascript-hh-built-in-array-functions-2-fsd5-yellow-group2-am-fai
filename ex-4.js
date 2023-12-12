@@ -400,9 +400,10 @@ for(let i=0; i< billMembers.length; i++){
     totalMembers.push(billMembers[i])
   }
 } 
+totalMembers = totalMembers.length
 
 
-console.log(totalMembers)
+console.log(`Unique Members Count: ${totalMembers}`)
 
  
 
