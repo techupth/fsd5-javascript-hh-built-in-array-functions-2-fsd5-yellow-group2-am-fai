@@ -375,4 +375,27 @@ const bills = [
 
 // Start coding here
 
-const totalPaidByLocation;
+let totalPaidByLocation;
+
+function justLocation (bill){
+    return bill = bill.location
+}
+
+let location = bills.map(justLocation)
+//console.log(location)
+
+let noRepeatLocation = [];
+for (let i=0; i<location.length; i++){
+    if(!noRepeatLocation.includes(location[i])){
+        noRepeatLocation.push(location[i])
+    }
+}
+console.log(noRepeatLocation)
+
+//ยังทำไมได้ค่ะ คิดออกแล้วเดี๋ยวมาส่งใหม่
+
+
+
+
+
+
