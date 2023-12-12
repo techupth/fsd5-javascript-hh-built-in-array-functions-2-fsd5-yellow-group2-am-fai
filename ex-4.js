@@ -374,4 +374,9 @@ const bills = [
 ];
 
 // Start coding here
-const totalMembers;
+const newBills = bills.filter((filteredBill) => filteredBill.member !== null);
+const totalMembers = newBills.filter((bill, index, self) => {
+  return self.findIndex((b) => b.member.name === bill.member.name) === index;
+});
+
+console.log(`Unique Members Count: ${totalMembers.length}`);
